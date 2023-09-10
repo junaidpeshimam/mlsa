@@ -19,9 +19,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/water.jpg";
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText = "picture of water";
 
 /**
  * Project list
@@ -31,28 +31,24 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
-    description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+    title: "this is my first resume site",
+    description: "this is my first resume site which was created my html & css.",
+    url: "https://junaidpeshimam.github.io/resume/",
   },
   {
-    title: "Web Development for Beginners",
-    description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+    title: "My portfolio",
+    description: "This was my first portfolio create by notion.",
+    url: "https://junaidpeshimam.notion.site/M-Junaid-Peshimam-48ff5039b7ae450fb4e98f690e0b76ac?pvs=4",
   },
   {
-    title: "My Resume Site",
-    description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+    title: "Minimalistic resume idea",
+    description: "Minimalistic resume created by canva.",
+    url: "https://www.canva.com/design/DAFtCr-LOL4/UN7wJss4YAnBSJ9SzWiUvg/edit?utm_content=DAFtCr-LOL4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
   },
   {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+    title: "lets get connected",
+    description: "Its my ig.",
+    url: "https://www.instagram.com/junaidpeshimam",
   },
 ];
 
@@ -64,7 +60,12 @@ const Portfolio = () => {
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{
+              height: "90%",
+              width: "100%",
+              objectFit: "cover",
+              animation: "1s ease-out 0s 1 slideIn",
+            }}
             alt={imageAltText}
           />
         </div>
