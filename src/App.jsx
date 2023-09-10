@@ -38,7 +38,6 @@ const siteProps = {
 
 const primaryColor = "#4E567E";
 const secondaryColor = "#D2F1E4";
-<Education />;
 
 const App = () => {
   return (
@@ -46,6 +45,7 @@ const App = () => {
       <Header />
       <Home name={siteProps.name} title={siteProps.title} />
       <About />
+      <Education />
       <Portfolio />
       <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
     </div>
