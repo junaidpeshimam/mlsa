@@ -1,33 +1,41 @@
 import React from "react";
 
 const Education = () => {
-  const educationStyles = {
-    backgroundColor: "#F2E2C7", // Background color
-    padding: "20px", // Padding for the section
-    borderRadius: "10px", // Rounded corners
-    boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)", // Box shadow for a subtle effect
-  };
-
-  const schoolStyles = {
-    borderBottom: "2px solid #6C63FF", // Border color for each school
-    padding: "10px 0", // Padding for each school item
-    marginBottom: "10px", // Spacing between schools
-  };
+  // Education details
+  const educationDetails = [
+    {
+      institution: "Sri Lakshmi High School",
+      degree: "Schooling",
+      year: "2000-2012",
+    },
+    {
+      institution: "Sri Chaitany Junior College",
+      degree: "Higher School",
+      year: "2012-2014",
+    },
+    {
+      institution: "Coursera and Google",
+      degree: "UX Design Professional Certificate",
+      year: "2022",
+    },
+    {
+      institution: "G Pullaiah College of Engineering and Technology",
+      degree: "Computer Science and Engineering",
+      year: "2021-2025",
+    },
+  ];
 
   return (
-    <section style={educationStyles} id="education">
-      <h2 style={{ color: "#6C63FF" }}>My Education</h2>
-      <div style={schoolStyles}>
-        <h3 style={{ color: "#FF8C42" }}>Sri Lakshmi High School</h3>
-        <p>Completed my schooling with flying colors.</p>
-      </div>
-      <div style={schoolStyles}>
-        <h3 style={{ color: "#FF8C42" }}>Sri Chaitanya Junior College</h3>
-        <p>Successfully completed my Higher School education.</p>
-      </div>
-      <div style={schoolStyles}>
-        <h3 style={{ color: "#FF8C42" }}>G Pullaiah College of Engineering and Technology</h3>
-        <p>Currently pursuing my graduation in an exciting engineering journey.</p>
+    <section className="light" id="education">
+      <h2>Education</h2>
+      <div className="education-grid">
+        {educationDetails.map((edu, index) => (
+          <div className="education-cell" key={index}>
+            <h3>{edu.institution}</h3>
+            <p>{edu.degree}</p>
+            <p>{edu.year}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
